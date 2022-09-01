@@ -1,0 +1,21 @@
+<%= form_with url: "./grade", method: :get  do |form| %>
+    <div>
+        <%= form.label        :subject1, "Subject:" %>
+        <%= form.text_field   :subject1 %>
+        <%= form.label        :score1, "Score:" %>
+        <%= form.number_field :score1 %>
+    </div>
+    <div>
+        <%= form.label        :subject2, "Subject:" %>
+        <%= form.text_field   :subject2 %>
+        <%= form.label        :score2, "Score:" %>
+        <%= form.number_field :score2 %>
+    </div>
+    <div>
+        <%= form.label        :subject3, "Subject:" %>
+        <%= form.text_field   :subject3 %>
+        <%= form.label        :score3, "Score:" %>
+        <%= form.number_field :score3 %>
+    </div>
+    <%= form.submit "calculate" %>
+<% end %>
